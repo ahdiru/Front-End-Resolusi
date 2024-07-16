@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kalkulator BMI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <main>
+            <div id="main-content">
+                <article id="desc-bmi">
+                    <h1>Kalkulator BMI</h1>
+                    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+                    berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+                </article>
+                <article>
+                    <form id="bmi-form">
+                        <label for="gender">Jenis Kelamin</label><br>
+                        <input type="radio" id="pria" name="gender" value="pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="gender" value="wanita">
+                        <label for="wanita">Wanita</label><br><br>
+
+                        <label for="berat-badan">Berat Badan (Kg)</label><br>
+                        <div class="input-icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <input type="number" id="berat-badan" name="berat-badan" required>
+                        </div><br>
+                        <label for="age">Usia (tahun):</label><br>
+                        <div class="input-icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <input type="number" id="age" name="age" required>
+                        </div><br>
+                        <label for="height">Tinggi badan (cm):</label><br>
+                        <div class="input-icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <input type="number" id="height" name="height" required>
+                        </div><br>
+                        <button type="submit">Hitung BMI</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </article>
+                <article>
+                    <h3>Keunggulan Fitur</h3>
+                    <ol>
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ol>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².</p>
+                    <p>Informasi yang ditampilkan di situs ini hanya untuk tujuan informasi dan tidak boleh dianggap sebagai saran medis. Silakan berkonsultasi dengan profesional medis untuk diagnosis dan perawatan apa pun.</p>    
+                </article>
+            </div>
+        </main>
+
+        <!-- Konten Samping -->
+        <aside>
+            <article class="result card">
+                <header>
+                    <h2>Hasil</h2>
+                    <p id="bmi-value"></p>
+                    <button id="download-result">Download Hasil BMI</button>
+                </header>
+                <section>
+                    <p id="result-bmi"></p>                    
+                    <button id="consult-nutritionist">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button id="register-nutritionist">Registrasi Online Ahli Gizi</button>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
+                </section>
+            </article>
+
+            <article class="konsultasi">
+                <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
+                <ul>
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Sakit Jantung</li>
+                    <li>Osteoarthritis</li>
+                </ul>
+                <button id="consult-doctor">Konsultasi Dokter Via Aplikasi</button>
+                <button id="register-doctor">Registrasi Online Sekarang</button>
+            </article>
+
+            <article class="download-app">
+                <h3>Download Aplikasi</h3>
+                <figure>
+                    <a href="https://play.google.com"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Google Play"></a>
+                    <a href="https://appstore.com"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Download_on_the_App_Store_RGB_blk.svg" alt="App Store"></a>
+                </figure>
+            </article>
+        </aside>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

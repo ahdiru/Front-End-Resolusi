@@ -1,0 +1,95 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bmi-form{
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+main {
+  flex: 3;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon i {
+  flex: 1;
+  left: 10px;
+  color: #0073ff;
+  background-color: #f4f4f4;
+  margin: 4px;
+  padding: 2px;
+}
+
+.input-icon input[type="number"] {
+  padding-left: 10px;
+  width: calc(100% - 12px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #85BBD9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #6c757d;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-app img {
+  width: 150px;
+  margin: 10px;
+}
