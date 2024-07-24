@@ -1,0 +1,378 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+
+.hero {
+    background: #a5e8f7;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+header {
+    display: inline;
+}
+
+nav {
+    background: #00c8eb;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #425c77;
+    color: white;
+}
+
+
+section, article {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section:first-of-type {
+    border-top: none;
+}
+
+#home img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%; 
+    height: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-details {
+    padding: 15px;
+}
+
+.project-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.project-details p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+aside.card {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+aside.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+#proyek-terbaru {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#proyek-terbaru .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#proyek-terbaru .project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+}
+
+#proyek-terbaru .project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Paket Layanan Section */
+#paket-layanan {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#paket-layanan .packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#paket-layanan .package {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+}
+
+#paket-layanan .package img {
+    width: 100%;
+    height: auto;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+#contact img {
+    width: 100%;
+    height: auto; 
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+article .aside {
+    flex: 1;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    #keahlian-saya .skills,
+    #proyek-terbaru .projects,
+    #paket-layanan .packages {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #keahlian-saya .skill,
+    #proyek-terbaru .project,
+    #paket-layanan .package {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    form label,
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1.1em;
+    }
+}
